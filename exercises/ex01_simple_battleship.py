@@ -10,7 +10,7 @@ if Location1 == 1-4:
     print("")
 
 else:
-   if Location1 == 0:
+   if Location1 <= 0:
     print("Error! # too low!"), type(exit())
 if Location1 >= 5:
     print("Error! # too high!"), type(exit())
