@@ -1,7 +1,6 @@
-"""Evaluate algorithms from other modules!"""
-
 from runtime_analysis_functions import evaluate_runtime, evaluate_memory_usage
 from matplotlib import pyplot as plt
+import tracemalloc
 
 __author__ = "730477259"
 

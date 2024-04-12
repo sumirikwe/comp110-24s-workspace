@@ -22,6 +22,7 @@ def random_descending_list(n: int) -> list[int]:
 
 def evaluate_runtime(fn_name: str, start_size: int, end_size: int) -> np.array:
     """Evaluate the runtime for different size inputs."""
+    from sort_functions import selection_sort, insertion_sort
     NUM_TRIALS: int = 1
     times: list[float] = []
     for inp_size in range(start_size, end_size + 1):
@@ -36,8 +37,9 @@ def evaluate_runtime(fn_name: str, start_size: int, end_size: int) -> np.array:
 
 def evaluate_memory_usage(fn_name, start_size: int, end_size: int):
     """Evaluate the memory usage for different size inputs."""
+    from sort_functions import selection_sort, insertion_sort
     usage: list[float] = []
-    for inp_size in range(start_size, end_size + 1):
+    for inp_size in range(start_size, end_size+ 1):
         l: list[int] = random_descending_list(inp_size)
         print(f"Trial {inp_size-start_size}/{end_size - start_size}")
         tracemalloc.start()

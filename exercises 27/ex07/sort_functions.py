@@ -2,9 +2,9 @@
 
 __author__ = ""
 
-
 def insertion_sort(x: list[int]) -> None:
-    """Basic insertion sort algorithm. Insert into an already sorted list."""
+    """Basic insertion sort algorithm.
+    Insert into an already sorted list."""
     idx: int = 0
     while idx < (len(x) - 1):
         unsort_idx: int = idx + 1
@@ -20,7 +20,8 @@ def insertion_sort(x: list[int]) -> None:
 
 
 def selection_sort(x: list[int]) -> None:
-    """Basic selection sort algorithm. Repeatedly find the minimum and swap it."""
+    """Basic selection sort algorithm. 
+    Repeatedly find the minimum and swap it."""
     idx: int = 0
     while idx < len(x):
         min_idx: int = idx
